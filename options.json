@@ -7,9 +7,9 @@
             ]
         },
         {
-            "Name": "Lists",
+            "Name": "More",
             "Itens": [
-                {"Name": "Built-in BCL"}
+                {"Name": "ThreeSum"}
             ]
         }
     ]

@@ -39,6 +39,13 @@ namespace algorithms
                 var itemName = json.Itens[itemToRun].Name;
                 var subItem = json.Itens[itemToRun].Itens[subItemToRun].Name;
 
+                System.Console.WriteLine("");
+                System.Console.WriteLine("");
+                System.Console.WriteLine("========================================================================");
+                System.Console.WriteLine("");
+                System.Console.WriteLine("");
+                System.Console.WriteLine("");
+
                 Type type = Type.GetType($"algorithms.{itemName}.{subItem}");
                 ConstructorInfo constructor = type.GetConstructor(Type.EmptyTypes);
                 var obj = constructor.Invoke(new object[]{});
