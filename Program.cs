@@ -31,7 +31,7 @@ namespace algorithms
 
                 for (int i = 0; i < json.Itens[itemToRun].Itens.Count; i++)
                 {
-                    var item = json.Itens[itemToRun].Itens[0];
+                    var item = json.Itens[itemToRun].Itens[i];
                     Console.WriteLine($"{i} - {item.Name}");
                 }
 

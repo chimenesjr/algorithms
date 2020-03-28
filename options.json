@@ -3,7 +3,11 @@
         {
             "Name": "Sorting",
             "Itens": [
-                {"Name": "Bubble"}
+                {"Name": "Bubble"},
+                {"Name": "SelectionSort"},
+                {"Name": "Insertion"},
+                {"Name": "Shell"},
+                {"Name": "Merge"}
             ]
         },
         {
