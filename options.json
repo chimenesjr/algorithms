@@ -12,9 +12,9 @@
             ]
         },
         {
-            "Name": "More",
+            "Name": "List",
             "Itens": [
-                {"Name": "ThreeSum"}
+                {"Name": "SinglyLinkedList"}
             ]
         }
     ]
