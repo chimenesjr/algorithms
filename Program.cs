@@ -46,11 +46,19 @@ namespace algorithms
                 System.Console.WriteLine("");
                 System.Console.WriteLine("");
 
-                Type type = Type.GetType($"algorithms.{itemName}.{subItem}");
-                ConstructorInfo constructor = type.GetConstructor(Type.EmptyTypes);
-                var obj = constructor.Invoke(new object[]{});
+                try
+                {
+                    Type type = Type.GetType($"algorithms.{itemName}.{subItem}");
+                    ConstructorInfo constructor = type.GetConstructor(Type.EmptyTypes);
+                    var obj = constructor.Invoke(new object[]{});
 
-                System.Console.WriteLine("");
+                    System.Console.WriteLine("");
+                }
+                catch (System.Exception e)
+                {
+                    System.Console.WriteLine(e.ToString());
+                }
+
             }
         }
     }

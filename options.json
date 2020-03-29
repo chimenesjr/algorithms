@@ -7,7 +7,8 @@
                 {"Name": "SelectionSort"},
                 {"Name": "Insertion"},
                 {"Name": "Shell"},
-                {"Name": "Merge"}
+                {"Name": "Merge"},
+                {"Name": "Quick"}
             ]
         },
         {

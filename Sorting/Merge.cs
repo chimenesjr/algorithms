@@ -1,5 +1,8 @@
+// divide em varios pedacos e faz o merge em ordem recursivamente
 // uses more memory
 // not an in-place memory
+// divide and conquer
+// recursive
 
 using System;
 using algorithms.Util;
