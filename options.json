@@ -14,7 +14,8 @@
         {
             "Name": "List",
             "Itens": [
-                {"Name": "SinglyLinkedList"}
+                {"Name": "SinglyLinkedList"},
+                {"Name": "ArrayQueue"}
             ]
         }
     ]
