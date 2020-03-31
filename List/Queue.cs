@@ -32,9 +32,9 @@ namespace algorithms.List
 
     public class ArrayQueue<T> : IEnumerable<T>
     {
-        private T[] _queue;
-        private int _head;
-        private int _tail;
+        internal T[] _queue;
+        internal int _head;
+        internal int _tail;
 
         public ArrayQueue()
         {
@@ -47,11 +47,11 @@ namespace algorithms.List
             _queue = new T[capacity];
         }
 
-        public int Count => _tail - _head;
+        public virtual int Count => _tail - _head;
         public bool IsEmpty => Count == 0;
         public int Capacity => _queue.Length;
 
-        public void Enqueue(T item)
+        public virtual void Enqueue(T item)
         {
             if (_queue.Length == _tail)
             {
@@ -63,7 +63,7 @@ namespace algorithms.List
             _queue[_tail++] = item;
         }
 
-        public void Dequeue()
+        public virtual void Dequeue()
         {
             if (IsEmpty)
                 throw new InvalidOperationException();
@@ -74,7 +74,7 @@ namespace algorithms.List
                 _head = _tail = 0;
         }
 
-        public T Peek()
+        public virtual T Peek()
         {
             if (IsEmpty)
                 throw new InvalidOperationException();
@@ -83,7 +83,7 @@ namespace algorithms.List
         }
 
 
-        public IEnumerator<T> GetEnumerator()
+        public virtual IEnumerator<T> GetEnumerator()
         {
             for (int i = _head; i < _tail; i++)
             {

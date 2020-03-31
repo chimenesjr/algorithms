@@ -15,7 +15,14 @@
             "Name": "List",
             "Itens": [
                 {"Name": "SinglyLinkedList"},
-                {"Name": "ArrayQueue"}
+                {"Name": "ArrayQueue"},
+                {"Name": "CircularQueue"}
+            ]
+        },
+        {
+            "Name": "Search",
+            "Itens": [
+                {"Name": "Binary"}
             ]
         }
     ]
