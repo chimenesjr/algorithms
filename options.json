@@ -24,6 +24,12 @@
             "Itens": [
                 {"Name": "Binary"}
             ]
+        },
+        {
+            "Name": "Tree",
+            "Itens": [
+                {"Name": "BinarySearchTree"}
+            ]
         }
     ]
 }
