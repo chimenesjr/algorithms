@@ -30,6 +30,12 @@
             "Itens": [
                 {"Name": "BinarySearchTree"}
             ]
+        },
+        {
+            "Name": "Graph",
+            "Itens": [
+                {"Name": "dijkstras"}
+            ]
         }
     ]
 }
